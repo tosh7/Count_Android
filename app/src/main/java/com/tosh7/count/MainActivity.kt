@@ -17,5 +17,17 @@ class MainActivity : AppCompatActivity() {
             number += 1
             count_text_view.text = number.toString()
         }
+        minus_button.setOnClickListener {
+            number -= 1
+            count_text_view.text = number.toString()
+        }
+        times_button.setOnClickListener {
+            number *= 2
+            count_text_view.text = number.toString()
+        }
+        division_button.setOnClickListener {
+            number /= 2
+            count_text_view.text = number.toString()
+        }
     }
 }
